@@ -38,9 +38,8 @@ with open(data_source) as f:
         reports.append(levels)
 
 
-# Part 1
 for report in reports:
-    # Reverse all reports that are decending (make easier testing)
+    # Reverse all reports that are descending (make easier testing)
     if report[0] > report[-1]:
         report.reverse()
 
@@ -49,10 +48,6 @@ for report in reports:
 
     if safe_dampened_report(report):
         safe_dampened += 1
-
-
-print(safe)
-print(safe_dampened)
 
 
 print("-" * 20)
