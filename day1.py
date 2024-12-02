@@ -23,8 +23,9 @@ for a, b in zip(list_a, list_b):
 
 # Similarity score
 for a in list_a:
-    same = [b for b in list_b if b == a]
-    total_similarity += a * len(same)
+    # same = [b for b in list_b if b == a]
+    # total_similarity += a * len(same)
+    total_similarity += a * list_b.count(a)
 
 print("-" * 20)
 print("Advent of Code 2024: Day 1")
